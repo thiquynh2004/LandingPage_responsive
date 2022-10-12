@@ -1,0 +1,65 @@
+  //color::
+$c1: #ffffff;
+$c1-100: #f7f7f7;
+$c1-300:#97a1a9;
+$c1-500: #3f3a64;
+$c1-700: #213364;
+$c1-900: #151421;
+$c2: #009f4d;
+$c2-100: #0d8428;
+$c3: #000000;
+
+$green-light: #009f4d;
+$while-0:#fff;
+$while-1: #eee;
+$while-2: #e6e8f6;
+$while-3: #e6ebff;
+$bg-while-light:#f8f9fa;
+$bg-while-lights:#f7f7f7;
+$h2-color:#3f3a64;
+$bg-black: #0D1326;
+$bg-black-1:#151421;
+$grey-light:#666;
+$grey-light-1:#999;
+$grey-lightes:#7e7d7d;
+$bg-green-light:#00a63f;
+$bg-green-dark:#076b38;
+$red:rgb(255, 0, 0);
+$orange:rgb(255, 166, 0);
+
+//Text-size
+$text-xs: 0.75rem;
+$text-sm: 0.875rem;
+$text-base: 1rem;
+$text-md: 1.25rem;
+$text-lg: 1.5rem;
+$text-xl: 1.875rem;
+$text-2xl: 2rem;
+$text-3xl: 3rem;
+$text-4xl: 4rem;
+
+//font-weight
+$font-light: 300;
+$font-normal: 400;
+$font-medium: 500;
+$font-SemiBold: 600;
+$font-bold: 700;
+
+//paddingX
+
+@mixin text($fs, $fw, $c) {
+  font-size: $fs;
+  font-weight: $fw;
+  color: $c;
+}
+
+@mixin button($bg, $fs, $fw, $c) {
+  background: $bg;
+  @include text($fs, $fw, $c);
+  // border: $bd;
+  // padding: $pd-y $pd-x;
+  // border-radius: $br;
+  cursor: pointer;
+}
+
+@mixin input(){}

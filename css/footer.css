@@ -1,0 +1,115 @@
+.container {
+  width: 1280px !important;
+  max-width: 100% !important;
+}
+
+#footer {
+  background-color: #151421;
+  padding: 2rem 0;
+}
+
+#footer .container .row .item-footer {
+  padding: 0 1rem;
+}
+
+#footer .container .row .item-footer .logo a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+#footer .container .row .item-footer .logo a .logo-icon {
+  color: #009f4d;
+  font-size: 2rem;
+}
+
+#footer .container .row .item-footer .logo .description {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  display: block;
+  margin: 0 2rem;
+}
+
+#footer .container .row .item-footer .logo p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #ffffff;
+  opacity: 0.5;
+  padding: 2rem 0;
+  letter-spacing: 1px;
+}
+
+#footer .container .row .item-footer .logo .social-footer a {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #97a1a9;
+  margin: 0 0.3rem;
+}
+
+#footer .container .row .item-footer .logo .social-footer a i:hover {
+  color: #ffffff;
+}
+
+#footer .container .row .item-2 h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+#footer .container .row .item-2 p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #97a1a9;
+  letter-spacing: 1px;
+}
+
+#footer .container .row .item-2 p a {
+  text-decoration: none;
+  color: #97a1a9;
+}
+
+#footer .container .row .item-2 p:hover a {
+  color: #ffffff;
+}
+
+#footer .container .copyright p {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #97a1a9;
+}
+
+#footer .container .copyright a {
+  color: #009f4d;
+  text-decoration: none;
+}
+
+#footer .container .copyright .back-to-top {
+  color: #ffffff;
+  width: 3rem;
+  height: 3rem;
+  background-color: #009f4d;
+  color: #ffffff;
+  text-align: center;
+  line-height: 3rem;
+  border-radius: 3rem;
+  position: fixed;
+  bottom: 1.2rem;
+  right: 1.2rem;
+  z-index: 10;
+}
+
+@media screen and (max-width: 576px) {
+  #footer .container .copyright p {
+    font-size: 0.875rem;
+  }
+  #footer .social-footer {
+    padding: 0.5rem 0;
+  }
+  #footer .social-footer .copyright p {
+    font-size: 0.875rem;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

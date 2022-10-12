@@ -1,0 +1,107 @@
+@import "../scss/variable";
+
+.container{
+  width:1280px !important;
+  max-width: 100% !important;
+}
+#footer {
+  background-color: $c1-900;
+  padding: 2rem 0;
+  .container {
+    .row {
+      .item-footer {
+        padding: 0 1rem;
+        .logo {
+          a {
+            text-decoration: none;
+            @include text($text-2xl, $font-bold, $c1);
+
+            .logo-icon {
+              color: $c2;
+              font-size: $text-2xl;
+            }
+          }
+          .description {
+            @include text($text-base, $font-SemiBold, $c1);
+            display: block;
+            margin: 0 2rem;
+          }
+          p {
+            @include text($text-base, $font-normal, $c1);
+            opacity: 0.5;
+            padding: 2rem 0;
+            letter-spacing: 1px;
+          }
+          .social-footer {
+            a {
+              @include text($text-sm, $font-bold, $c1-300);
+              margin: 0 0.3rem;
+              i {
+                &:hover {
+                  color: $c1;
+                }
+              }
+            }
+          }
+        }
+      }
+      .item-2 {
+        h1 {
+          @include text($text-lg, $font-normal, $c1);
+        }
+        p {
+          @include text($text-base, $font-normal, $c1-300);
+          letter-spacing: 1px;
+          a {
+            text-decoration: none;
+            color: $c1-300;
+          }
+          &:hover a {
+            color: $c1;
+          }
+        }
+      }
+    }
+    .copyright {
+      p {
+        text-align: center;
+        @include text($text-md, $font-normal, $c1-300);
+      }
+      a {
+        color: $c2;
+        text-decoration: none;
+      }
+      .back-to-top {
+        color: $c1;
+        width: 3rem;
+        height: 3rem;
+        background-color: $c2;
+        color: #ffffff;
+        text-align: center;
+        line-height: 3rem;
+        border-radius: 3rem;
+        position: fixed;
+        bottom: 1.2rem;
+        right: 1.2rem;
+        z-index: 10;
+      }
+    }
+  }
+
+  @media screen and (max-width:576px){
+    .container {
+      .copyright {
+        p{
+          font-size: $text-sm;
+        }
+        }
+    }
+    .social-footer{
+      padding: 0.5rem 0;
+      .copyright p{
+        font-size: $text-sm;
+      }
+    }
+   
+  }
+}

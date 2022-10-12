@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/contact.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div id="header"></div>
+      <div class="title-header">
+        <h1>Contact Us</h1>
+        <p>We work with bold brands that we believe in.</p>
+      </div>
+    </header>
+    
+    <section class="full-services">
+      <header class="title">
+        <div class="container">
+          <h1>We are a full-service creative agency</h1>
+          <p>
+            Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi
+            ac sed, lacinia est. Quisque ut lectus consequat, eros et.
+          </p>
+        </div>
+      </header>
+      <main class="main">
+        <div class="container">
+          <div class="row">
+            <div class="col-item col-lg-4 col-md-6">
+              <div class="detail">
+                <div class="icon">
+                  <i class="fa-regular fa-map"></i>
+                </div>
+
+                <div class="info-detail">
+                  <h1>Our Location:</h1>
+                  <p>
+                    Corp Vision, 343 marketing, #21 cravel 1st lane street, NY -
+                    62617
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-item col-lg-4 col-md-6">
+              <div class="detail">
+                <div class="icon">
+                  <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+
+                <div class="info-detail">
+                  <h1>Give us a call:</h1>
+                  <p>
+                    <a href="tel:+12 404-11-22-89">+12 404-11-22-89</a>
+                  </p>
+                  <p><a href="tel:+12 404-11-22-99">+12 404-11-22-99</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-item col-lg-4 col-md-6">
+              <div class="detail">
+                <div class="icon">
+                  <i class="fa-regular fa-envelope"></i>
+                </div>
+
+                <div class="info-detail">
+                  <h1>Help Desk</h1>
+                  <p>
+                    <a href="mailto:company@gmail.com">Company@gmail.com</a>
+                  </p>
+                  <p><a href="support@gmail.com">Support@gmail.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <section class="map" width="100%" position="relative">
+      <div class="container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d777023.4092410689!2d-74.347413!3d40.469785!3m2!1i1024!2i768!4f13.1!4m3!3e0!4m0!4m0!5e0!3m2!1sen!2sin!4v1651128089198!5m2!1sen!2sin"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+    <section class="talk-project">
+      <header class="talk-header">
+        <div class="container">
+          <h1>Let’s talk about your project</h1>
+          <p>
+            We have made it easy for clients to reach us and get their solutions
+            weaved
+          </p>
+        </div>
+      </header>
+      <main class="main">
+        <div class="container">
+          <div class="form">
+            <div class="form-top">
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Name"
+              />
+              <input
+                type="number"
+                class="form-control"
+                id="phone"
+                placeholder="Your Phone Number"
+              />
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Email*"
+              />
+              <input
+                type="text"
+                class="form-control"
+                id="subject"
+                placeholder="Subject"
+              />
+            </div>
+            <div class="form-down">
+              <textarea class="form-control" id="textarea" rows="3" placeholder="Message"></textarea>
+            </div>
+            <div class="summit">
+              <button class="btn summit">Summit Now</button>
+            </div>
+            
+          </div>
+        </div>
+      </main>
+    </section>
+    <footer id="footer"></footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      $(function () {
+        $("#header").load("../layout/header.html");
+        $("#footer").load("../layout/footer.html");
+      });
+    </script>
+    <script
+      src="https://kit.fontawesome.com/65241cdcd9.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

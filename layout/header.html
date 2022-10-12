@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>header-layout</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Jost:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&family=Oswald:wght@200;300;400;500&family=Roboto+Mono:wght@200;300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Jost:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&family=Oswald:wght@200;300;400;500&family=Roboto+Mono:wght@200;300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div id="navbar" class="navbar">
+        <div class="container">
+          <h1>
+            <a href="">
+              <div class="logo">
+                <span class="fa fa-align-right logo-icon"></span>
+                Corp Vision
+                <p class="txt-logo">Vision to your Future</p>
+              </div>
+            </a>
+          </h1>
+          <div id="navbar" class="navbar-link">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../page/about.html">About</a></li>
+              <li>
+                <a href="../page/services.html">Services</a>
+              </li>
+              <li>
+                <div class="dropmenu">
+                  <a href="#">Pages</a><i class="fa-solid fa-angle-down"></i>
+                  <div class="submenu">
+                    <ul>
+                      <li>
+                        <a href="../blog-posts.html"
+                          >Blog Posts</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../landing-page.html"
+                          >Landing page</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="../page/contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <span
+            id="chang-icon-expand"
+            onclick="menuSmallShow()"
+            class="navbar-toggler-icon fa icon-expand fa-bars nav-sm"
+          >
+          </span>
+          <div class="navbar-search">
+            <div class="search">
+              <i class="fa fa-search icon-material-search"></i>
+            </div>
+            <i onclick="myFunction()" class="fa-solid fa-moon moonsty"></i>
+            <!-- <i onclick="myFunction()" class="fa fa-sun"></i> -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="carousel">
+      <div class="item">
+        <div class="detail">
+          <!-- <h2>Blog Posts</h2>
+          <p>Find all our latest news, insights, and events</p> -->
+        </div>
+      </div>
+
+      <div id="icon-navright">
+        <a onclick="navrightShow()"><i class="fa-solid fa-angles-left"></i></a>
+      </div>
+      <div id="hide-navright" class="navbar-right">
+        <ul>
+          <li>
+            <a onclick="navrightHide()"
+              ><i class="fa-solid fa-angles-right"></i
+            ></a>
+          </li>
+          <li>
+            <a href="javascript: history.go(-1)" href=""
+              ><i class="fa-solid fa-arrow-left"></i>Back</a
+            >
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-download"></i>Download</a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-cart-shopping"></i>Buy</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <button id="back-to-top"><i class="fa-solid fa-angle-up"></i></button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      $("#slider .owl-carousel").owlCarousel({
+        loop: false,
+        margin: 10,
+        nav: false,
+        items: 1,
+        dots: false,
+      });
+    </script>
+    <script>
+      var col = document.getElementsByClassName("col-4");
+      var page1 = document.getElementById("page-1");
+      var page2 = document.getElementById("page-2");
+      var page3 = document.getElementById("page-3");
+      var activeBtnP1 = document.getElementById("p1");
+      var activeBtnP2 = document.getElementById("p2");
+      var btnPrevs = document.getElementById("btnPrev");
+      var btnNexts = document.getElementById("btnNext");
+      var heightMainAr = document.getElementById("height-2");
+      function showPage2() {
+        page1.style.display = "none";
+        page2.style.display = "none";
+        page3.style.display = "flex";
+        activeBtnP1.style.backgroundColor = "#eee";
+        activeBtnP1.style.color = "#000";
+        activeBtnP2.style.backgroundColor = "#009f4d";
+        activeBtnP2.style.color = "#fff";
+        btnPrevs.style.display = "block";
+        btnNexts.style.display = "none";
+        heightMainAr.style.height = "886px";
+      }
+      function showPage1() {
+        page1.style.display = "flex";
+        page2.style.display = "flex";
+        page3.style.display = "none";
+        activeBtnP2.style.backgroundColor = "#eee";
+        activeBtnP2.style.color = "#000";
+        activeBtnP1.style.backgroundColor = "#009f4d";
+        activeBtnP1.style.color = "#fff";
+        btnPrevs.style.display = "none";
+        btnNexts.style.display = "block";
+        heightMainAr.style.height = "auto";
+      }
+      function comBack() {
+        history.back();
+      }
+    </script>
+
+<script>
+ 
+  </script>     
+    <script language="javascript" src="../js/nav-right.js"></script>
+    <script language="javascript" src="../js/back-to-top.js"></script>
+    <script language="javascript" src="../js/menuSmall.js"></script>
+    <script language="javascript" src="../js/dark-mode.js"></script>
+    <script language="javascript" src="../js/activeNav.js"></script>
+  </body>
+</html>
